@@ -52,6 +52,7 @@ sources/0 = SubResource("TileSetAtlasSource_fqi58")
 sources/1 = SubResource("TileSetAtlasSource_mewxp")
 
 [node name="Level" type="Node2D"]
+scale = Vector2(1.00699, 1.00481)
 script = ExtResource("1_nv3lm")
 
 [node name="Ground" type="Node2D" parent="."]
@@ -119,7 +120,7 @@ rotation = -2.26544
 position = Vector2(-477, 874)
 
 [node name="LightFanAnimation" parent="Ground" instance=ExtResource("13_fckn0")]
-position = Vector2(-2045, 1847)
+position = Vector2(-2042, 1847)
 autoplay = "default"
 
 [node name="Gate" parent="." instance=ExtResource("3_xu4my")]
@@ -130,13 +131,15 @@ metadata/_edit_lock_ = true
 position = Vector2(381, 565)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(0.3, 0.3)
+zoom = Vector2(0.6, 0.6)
 position_smoothing_enabled = true
 
 [node name="Projectiles" type="Node2D" parent="."]
 script = ExtResource("4_4c0sk")
 metadata/_edit_lock_ = true
 
+[connection signal="player_entered" from="Ground/House" to="." method="_on_house_player_entered"]
+[connection signal="player_exited" from="Ground/House" to="." method="_on_house_player_exited"]
 [connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
 [connection signal="grenade" from="Player" to="." method="_on_player_grenade"]
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
