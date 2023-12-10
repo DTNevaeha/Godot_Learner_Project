@@ -24,15 +24,15 @@ func _on_player_grenade(pos, direction):
 	$Projectiles.add_child(grenade)
 
 
-func _process(_delta):
-	var max_distance = 500
-	# If projectiles have moved further than the max distance then they are removed from the list
-	for projectile in $Projectiles.get_children():
-		if (
-			projectile.has_method("has_traveled_too_far")
-			and projectile.has_traveled_too_far(max_distance)
-		):
-			projectile.queue_free()
+# func _process(_delta):
+# 	var max_distance = 500
+# 	# If projectiles have moved further than the max distance then they are removed from the list
+# 	for projectile in $Projectiles.get_children():
+# 		if (
+# 			projectile.has_method("has_traveled_too_far")
+# 			and projectile.has_traveled_too_far(max_distance)
+# 		):
+# 			projectile.queue_free()
 
 
 func _on_house_player_entered():

@@ -8,6 +8,5 @@ func _on_body_entered(_body: Node2D):
 	player_entered.emit()
 
 
-
-func _on_body_exited(_body:Node2D):
+func _on_body_exited(_body: Node2D):
 	player_exited.emit()
