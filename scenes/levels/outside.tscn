@@ -119,7 +119,6 @@ position = Vector2(-338.633, 472.726)
 
 [node name="LightFanAnimation" parent="Ground" index="13" instance=ExtResource("13_m2qv8")]
 position = Vector2(-2042, 1847)
-autoplay = "default"
 
 [node name="Gate" parent="." index="1" instance=ExtResource("2_tik81")]
 position = Vector2(416.092, -760.343)
