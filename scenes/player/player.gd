@@ -11,6 +11,10 @@ signal update_stats
 var speed: int = max_speed
 
 
+func hit():
+	print("Player hit")
+
+
 func _process(_delta):
 	# input
 	var direction = Input.get_vector("left", "right", "up", "down")

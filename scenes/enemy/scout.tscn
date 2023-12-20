@@ -9,7 +9,7 @@ radius = 46.0977
 [sub_resource type="CircleShape2D" id="CircleShape2D_0lplg"]
 radius = 1042.67
 
-[node name="Scout" type="CharacterBody2D" groups=["Scouts"]]
+[node name="Scout" type="CharacterBody2D" groups=["Entity", "Scouts"]]
 light_mask = 2
 visibility_layer = 11
 script = ExtResource("1_p2vin")
