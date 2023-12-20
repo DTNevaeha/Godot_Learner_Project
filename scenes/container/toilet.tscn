@@ -12,13 +12,16 @@ radius = 100.125
 script = ExtResource("2_d41bx")
 
 [node name="BaseSprite" parent="." index="0"]
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h6cwa")
 
 [node name="LidSprite" parent="." index="1"]
 position = Vector2(0, 10)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("4_bhwx5")
 
 [node name="CollisionShape2D" parent="." index="2"]
+scale = Vector2(0.8, 0.8)
 shape = SubResource("CircleShape2D_2vkwx")
 
 [node name="Marker2D" type="Marker2D" parent="SpawnPositions" index="0"]
