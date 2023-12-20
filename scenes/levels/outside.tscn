@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dwyhrh71p7yyt"]
+[gd_scene load_steps=22 format=3 uid="uid://dwyhrh71p7yyt"]
 
 [ext_resource type="PackedScene" uid="uid://qwa64m2p60pk" path="res://scenes/levels/level.tscn" id="1_bru11"]
 [ext_resource type="Script" path="res://scenes/levels/outside.gd" id="2_ho6ch"]
@@ -16,6 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://cn7ahxxb8m21h" path="res://scenes/Objects/steam_vent.tscn" id="12_ny0ew"]
 [ext_resource type="PackedScene" uid="uid://dlequi7dq2ahn" path="res://scenes/Objects/light_fan_animation.tscn" id="13_m2qv8"]
 [ext_resource type="PackedScene" uid="uid://drocwso11ik3b" path="res://scenes/items/item.tscn" id="16_5fj50"]
+[ext_resource type="PackedScene" uid="uid://dy0gaphjld57b" path="res://scenes/container/crate.tscn" id="17_4foe2"]
+[ext_resource type="PackedScene" uid="uid://bgscnnbnwwabv" path="res://scenes/container/toilet.tscn" id="18_s40vj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fqi58"]
 resource_name = "walls"
@@ -122,10 +124,24 @@ position = Vector2(-2042, 1847)
 [node name="Gate" parent="." index="1" instance=ExtResource("2_tik81")]
 position = Vector2(416.092, -760.343)
 
-[node name="Player" parent="." index="3"]
+[node name="Crate" parent="." index="2" instance=ExtResource("17_4foe2")]
+position = Vector2(-29.7918, 609.07)
+rotation = -1.5708
+
+[node name="Toilet" parent="." index="3" instance=ExtResource("18_s40vj")]
+position = Vector2(1158.9, 518.506)
+rotation = -3.14159
+
+[node name="Item" parent="." index="4" instance=ExtResource("16_5fj50")]
+position = Vector2(762.669, 437.894)
+
+[node name="Items" parent="." index="5"]
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." index="7"]
 position = Vector2(465.744, 174.162)
 
-[node name="Item" parent="." index="6" instance=ExtResource("16_5fj50")]
-position = Vector2(762.669, 437.894)
+[node name="Lights" parent="." index="8"]
+metadata/_edit_lock_ = true
 
 [connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
