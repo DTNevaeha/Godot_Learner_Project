@@ -12,7 +12,7 @@ var speed: int = max_speed
 
 
 func hit():
-	print("Player hit")
+	Globals.health -= 10
 
 
 func _process(_delta):
