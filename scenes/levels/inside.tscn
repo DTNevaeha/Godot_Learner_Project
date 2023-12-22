@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://ccruqvxp2m1xo"]
+[gd_scene load_steps=39 format=3 uid="uid://ccruqvxp2m1xo"]
 
 [ext_resource type="PackedScene" uid="uid://qwa64m2p60pk" path="res://scenes/levels/level.tscn" id="1_4hjne"]
 [ext_resource type="Script" path="res://scenes/levels/inside.gd" id="2_6lry1"]
@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://dsvq42bgntvvp" path="res://graphics/objects/infestation/small_3.png" id="20_isr6j"]
 [ext_resource type="Texture2D" uid="uid://dpyifa7y063a1" path="res://graphics/objects/infestation/small_4.png" id="21_8i8yn"]
 [ext_resource type="Texture2D" uid="uid://cx7wmv4whqjeh" path="res://graphics/objects/infestation/spikes.png" id="22_sdtcx"]
+[ext_resource type="PackedScene" uid="uid://cqtsafcakt3gm" path="res://scenes/enemy/drone.tscn" id="23_10pra"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_boqkf"]
 radius = 113.423
@@ -876,6 +877,9 @@ metadata/_edit_lock_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitGateArea" index="0"]
 position = Vector2(-153.924, 42.0359)
 shape = SubResource("RectangleShape2D_obhje")
+
+[node name="Drone" parent="Enemies" index="0" instance=ExtResource("23_10pra")]
+position = Vector2(8036.82, -613.051)
 
 [node name="Player" parent="." index="8"]
 position = Vector2(7985.18, -1398.27)
