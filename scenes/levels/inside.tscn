@@ -881,6 +881,9 @@ shape = SubResource("RectangleShape2D_obhje")
 [node name="Drone" parent="Enemies" index="0" instance=ExtResource("23_10pra")]
 position = Vector2(8036.82, -613.051)
 
+[node name="Drone2" parent="Enemies" index="1" instance=ExtResource("23_10pra")]
+position = Vector2(5524.38, -1545.57)
+
 [node name="Player" parent="." index="8"]
 position = Vector2(7985.18, -1398.27)
 metadata/_edit_group_ = true
