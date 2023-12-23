@@ -18,6 +18,8 @@ func _ready():
 
 
 func _process(delta):
+	# Once the drone starts moving, it will move towards the player and never stop. Once it collides with anything or
+	# dies, it will explode.
 	if active:
 		look_at(Globals.player_pos)
 		var direction = (Globals.player_pos - position).normalized()
@@ -46,6 +48,7 @@ func hit():
 
 
 func stop_movement():
+	# This is to stop the drone from moving after it starts to explode
 	speed_multiplier = 0
 
 

@@ -100,7 +100,7 @@ position = Vector2(112, -27)
 target_position = Vector2(520, 0)
 
 [node name="Line2D" type="Line2D" parent="Turret/RayCast2D"]
-points = PackedVector2Array(0, 0, 648, 0)
+points = PackedVector2Array(0, 0, 519, 0)
 width = 1.65568e-07
 default_color = Color(0.52549, 0.00392157, 0.584314, 0.603922)
 
