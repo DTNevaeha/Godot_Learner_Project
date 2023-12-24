@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cphucs2qmy4rn"]
+[gd_scene load_steps=7 format=3 uid="uid://cphucs2qmy4rn"]
 
 [ext_resource type="Script" path="res://scenes/houses/house.gd" id="1_uke78"]
 [ext_resource type="PackedScene" uid="uid://4ecufh01ygfm" path="res://scenes/Objects/simple_light.tscn" id="2_8jm3f"]
 [ext_resource type="TileSet" uid="uid://e2c3m5av64kw" path="res://scenes/levels/house.tres" id="2_s4dma"]
 [ext_resource type="PackedScene" uid="uid://cso28g5bit5a1" path="res://scenes/Objects/wall_light.tscn" id="3_fcd2y"]
+[ext_resource type="PackedScene" uid="uid://dy0gaphjld57b" path="res://scenes/container/crate.tscn" id="5_ymvos"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sy8mx"]
 size = Vector2(4049, 3266)
@@ -51,6 +52,20 @@ rotation = -3.14159
 [node name="WallLight4" parent="." instance=ExtResource("3_fcd2y")]
 position = Vector2(717, -1255)
 rotation = -3.14159
+
+[node name="Containers" type="Node2D" parent="."]
+
+[node name="Crate" parent="Containers" instance=ExtResource("5_ymvos")]
+position = Vector2(1639, -1207)
+
+[node name="Crate2" parent="Containers" instance=ExtResource("5_ymvos")]
+position = Vector2(-182, -1207)
+
+[node name="Crate3" parent="Containers" instance=ExtResource("5_ymvos")]
+position = Vector2(-753, 699)
+
+[node name="Crate4" parent="Containers" instance=ExtResource("5_ymvos")]
+position = Vector2(-294, 699)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
