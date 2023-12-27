@@ -17,7 +17,7 @@ radius = 1042.67
 
 [node name="Scout" type="CharacterBody2D" groups=["Entity", "Scouts"]]
 light_mask = 2
-visibility_layer = 11
+visibility_layer = 15
 script = ExtResource("1_p2vin")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
