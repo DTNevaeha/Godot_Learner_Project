@@ -448,7 +448,7 @@ polygon = PackedVector2Array(3789.51, 1836.17, 3822.28, 1833.18, 3825.26, 1883.9
 metadata/_edit_lock_ = true
 
 [node name="Hunter" parent="Enemies" index="0" instance=ExtResource("22_0f23i")]
-position = Vector2(3493.58, 3685.27)
+position = Vector2(337.64, 1301.74)
 
 [node name="Player" parent="." index="7"]
 z_index = 2
@@ -461,6 +461,7 @@ metadata/_edit_lock_ = true
 position = Vector2(-738.836, 334.392)
 scale = Vector2(0.901369, 0.980753)
 curve = SubResource("Curve2D_fu2jh")
+metadata/_edit_lock_ = true
 
 [node name="Car" parent="CarPath" index="0" instance=ExtResource("16_cy7f4")]
 position = Vector2(-4645.84, 1081.5)
