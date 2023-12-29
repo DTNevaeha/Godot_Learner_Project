@@ -25,6 +25,8 @@ Music="*res://globals/music.tscn"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+mouse_cursor/custom_image="res://graphics/ui/crosshair159.png"
+mouse_cursor/custom_image_hotspot=Vector2(16, 16)
 
 [input]
 
