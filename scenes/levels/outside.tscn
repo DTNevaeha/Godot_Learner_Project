@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://dwyhrh71p7yyt"]
+[gd_scene load_steps=31 format=3 uid="uid://dwyhrh71p7yyt"]
 
 [ext_resource type="PackedScene" uid="uid://qwa64m2p60pk" path="res://scenes/levels/level.tscn" id="1_bru11"]
 [ext_resource type="Script" path="res://scenes/levels/outside.gd" id="2_ho6ch"]
@@ -22,7 +22,6 @@
 [ext_resource type="Texture2D" uid="uid://dcbcj0hblqng5" path="res://graphics/objects/infestation/line.png" id="14_jwsq6"]
 [ext_resource type="Texture2D" uid="uid://bir63gsh26m62" path="res://graphics/objects/infestation/small.png" id="15_ngn16"]
 [ext_resource type="PackedScene" uid="uid://cvddackbgrubu" path="res://scenes/enemy/car.tscn" id="16_cy7f4"]
-[ext_resource type="PackedScene" uid="uid://dcw6ffle5y3vk" path="res://scenes/enemy/hunter.tscn" id="22_0f23i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fqi58"]
 resource_name = "walls"
@@ -446,9 +445,6 @@ polygon = PackedVector2Array(3789.51, 1836.17, 3822.28, 1833.18, 3825.26, 1883.9
 
 [node name="Items" parent="." index="4"]
 metadata/_edit_lock_ = true
-
-[node name="Hunter" parent="Enemies" index="0" instance=ExtResource("22_0f23i")]
-position = Vector2(610.731, 1405.24)
 
 [node name="Player" parent="." index="7"]
 z_index = 2

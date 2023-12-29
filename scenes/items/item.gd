@@ -9,6 +9,7 @@ var distance: int = randi_range(150, 250)
 
 
 func _ready():
+	# Items are randomly generated based on the avaliable_options variable
 	if type == "laser":
 		$Sprite2D.modulate = Color(0.1, 0.2, 0.8)
 	elif type == "grenade":
@@ -37,4 +38,7 @@ func _on_body_entered(_body: Node2D):
 		Globals.grenade_amount += 1
 	else:
 		print("Unknown item type: " + type)
+	$AudioStreamPlayer2D.play()
+	$Sprite2D.hide()
+	await $AudioStreamPlayer2D.finished
 	queue_free()
