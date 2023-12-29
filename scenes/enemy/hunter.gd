@@ -44,4 +44,5 @@ func _on_attack_area_body_exited(_body:Node2D):
 
 
 func attack():
-	Globals.health -20
+	if player_nearby:
+		Globals.health -= 20
