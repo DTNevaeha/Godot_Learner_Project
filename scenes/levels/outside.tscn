@@ -448,7 +448,7 @@ polygon = PackedVector2Array(3789.51, 1836.17, 3822.28, 1833.18, 3825.26, 1883.9
 metadata/_edit_lock_ = true
 
 [node name="Hunter" parent="Enemies" index="0" instance=ExtResource("22_0f23i")]
-position = Vector2(337.64, 1301.74)
+position = Vector2(610.731, 1405.24)
 
 [node name="Player" parent="." index="7"]
 z_index = 2
