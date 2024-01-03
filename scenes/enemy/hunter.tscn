@@ -266,7 +266,6 @@ texture = ExtResource("4_m71xw")
 [node name="FrontLeftLeg" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(-30, -54)
 rotation = -0.584646
-scale = Vector2(1, 1)
 rest = Transform2D(0.833907, -0.551904, 0.551904, 0.833907, -30, -54)
 metadata/_local_pose_override_enabled_ = true
 
@@ -343,7 +342,6 @@ texture = ExtResource("7_t8bv6")
 [node name="BackLeftLeg" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(-30, -7)
 rotation = -2.50133
-scale = Vector2(1, 1)
 rest = Transform2D(-0.80194, -0.597404, 0.597404, -0.80194, -30, -7)
 metadata/_local_pose_override_enabled_ = true
 

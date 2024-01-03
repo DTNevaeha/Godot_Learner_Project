@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dwyhrh71p7yyt"]
+[gd_scene load_steps=32 format=3 uid="uid://dwyhrh71p7yyt"]
 
 [ext_resource type="PackedScene" uid="uid://qwa64m2p60pk" path="res://scenes/levels/level.tscn" id="1_bru11"]
 [ext_resource type="Script" path="res://scenes/levels/outside.gd" id="2_ho6ch"]
@@ -22,9 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://dcbcj0hblqng5" path="res://graphics/objects/infestation/line.png" id="14_jwsq6"]
 [ext_resource type="Texture2D" uid="uid://bir63gsh26m62" path="res://graphics/objects/infestation/small.png" id="15_ngn16"]
 [ext_resource type="PackedScene" uid="uid://cvddackbgrubu" path="res://scenes/enemy/car.tscn" id="16_cy7f4"]
-[ext_resource type="PackedScene" uid="uid://dcw6ffle5y3vk" path="res://scenes/enemy/hunter.tscn" id="22_0f23i"]
 [ext_resource type="PackedScene" uid="uid://b0yu3pfi5gt32" path="res://scenes/enemy/scout.tscn" id="23_sgoc5"]
-[ext_resource type="PackedScene" uid="uid://cqtsafcakt3gm" path="res://scenes/enemy/drone.tscn" id="24_okywb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fqi58"]
 resource_name = "walls"
@@ -449,36 +447,15 @@ polygon = PackedVector2Array(3789.51, 1836.17, 3822.28, 1833.18, 3825.26, 1883.9
 [node name="Items" parent="." index="4"]
 metadata/_edit_lock_ = true
 
-[node name="Hunter" parent="Enemies" index="0" instance=ExtResource("22_0f23i")]
-position = Vector2(3422.08, 2998.58)
+[node name="Scout2" parent="Enemies" index="0" instance=ExtResource("23_sgoc5")]
+position = Vector2(1304.88, 1183.31)
 
-[node name="Scout" parent="Enemies" index="1" instance=ExtResource("23_sgoc5")]
-position = Vector2(-1617.69, 1357.47)
-
-[node name="Scout2" parent="Enemies" index="2" instance=ExtResource("23_sgoc5")]
-position = Vector2(567.036, 3625.56)
-
-[node name="Scout6" parent="Enemies" index="3" instance=ExtResource("23_sgoc5")]
-position = Vector2(4713.06, 2099.9)
-
-[node name="Scout3" parent="Enemies" index="4" instance=ExtResource("23_sgoc5")]
-position = Vector2(-2061.59, 5371.17)
-
-[node name="Scout4" parent="Enemies" index="5" instance=ExtResource("23_sgoc5")]
-position = Vector2(-3926.55, 3462.35)
-
-[node name="Scout5" parent="Enemies" index="6" instance=ExtResource("23_sgoc5")]
-position = Vector2(-1904.69, 3028.43)
-
-[node name="Drone" parent="Enemies" index="7" instance=ExtResource("24_okywb")]
-position = Vector2(-1573, 478.697)
-
-[node name="Drone2" parent="Enemies" index="8" instance=ExtResource("24_okywb")]
-position = Vector2(1437.95, 4751.15)
+[node name="Scout3" parent="Enemies" index="1" instance=ExtResource("23_sgoc5")]
+position = Vector2(-798.419, 1123.6)
 
 [node name="Player" parent="." index="7"]
 z_index = 2
-position = Vector2(465.744, 174.162)
+position = Vector2(526.321, 281.645)
 
 [node name="Lights" parent="." index="8"]
 metadata/_edit_lock_ = true
@@ -526,6 +503,7 @@ position = Vector2(3698.15, -165.205)
 shape = SubResource("RectangleShape2D_md0ko")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." index="12"]
+visible = false
 navigation_polygon = SubResource("NavigationPolygon_e58vu")
 metadata/_edit_lock_ = true
 

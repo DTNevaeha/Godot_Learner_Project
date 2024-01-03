@@ -37,6 +37,7 @@ func _on_attack_area_body_entered(_body: Node2D):
 
 func _on_attack_area_body_exited(_body: Node2D):
 	player_nearby = false
+	$AnimatedSprite2D.play("walk")
 
 
 func _on_notice_area_body_exited(_body: Node2D):
