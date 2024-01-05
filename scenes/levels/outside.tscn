@@ -454,6 +454,12 @@ position = Vector2(3851.08, 2932.89)
 [node name="Scout" parent="Enemies" index="1" instance=ExtResource("23_sgoc5")]
 position = Vector2(-3478.68, 3334.96)
 
+[node name="Scout2" parent="Enemies" index="2" instance=ExtResource("23_sgoc5")]
+position = Vector2(1848.08, 674.754)
+
+[node name="Scout3" parent="Enemies" index="3" instance=ExtResource("23_sgoc5")]
+position = Vector2(1527.32, 718.544)
+
 [node name="Player" parent="." index="7"]
 z_index = 2
 position = Vector2(526.321, 281.645)

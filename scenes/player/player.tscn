@@ -40,6 +40,7 @@ polygon = PackedVector2Array(16, -58, 20, -58, 28, -52, 33, -45, 42, -37, 41, -3
 
 [node name="Player" type="CharacterBody2D" groups=["Entity"]]
 position = Vector2(1, -4)
+rotation = -0.0174533
 collision_mask = 31
 script = ExtResource("1_psp8n")
 

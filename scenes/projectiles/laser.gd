@@ -15,8 +15,6 @@ func _process(delta):
 func _on_body_entered(body: Node2D):
 	if "hit" in body:
 		body.hit()
-	$Sprite2D.hide()
-	await $AudioStreamPlayer2D.finished
 	queue_free()
 
 
