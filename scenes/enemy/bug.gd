@@ -33,11 +33,13 @@ func _process(_delta):
 func _on_attack_area_body_entered(_body: Node2D):
 	player_nearby = true
 	$AnimatedSprite2D.play("attack")
+	speed = 0
 
 
 func _on_attack_area_body_exited(_body: Node2D):
 	player_nearby = false
 	$AnimatedSprite2D.play("walk")
+	speed = 300
 
 
 func _on_notice_area_body_exited(_body: Node2D):
