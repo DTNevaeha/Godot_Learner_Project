@@ -243,7 +243,7 @@ texture = ExtResource("2_ydgqi")
 [node name="FrontRightLeg" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(31, -52)
 rotation = 0.457305
-rest = Transform2D(0.897246, 0.441531, -0.441531, 0.897246, 31, -52)
+rest = Transform2D(0.897246, 0.441532, -0.441532, 0.897246, 31, -52)
 
 [node name="Sprite2D" type="Sprite2D" parent="Skeleton2D/Torso/FrontRightLeg"]
 position = Vector2(27, -35)
@@ -252,7 +252,7 @@ texture = ExtResource("3_4wiwo")
 [node name="FrontRightClaw" type="Bone2D" parent="Skeleton2D/Torso/FrontRightLeg"]
 position = Vector2(51, -62)
 rotation = -0.619783
-rest = Transform2D(0.814005, -0.580858, 0.580858, 0.814005, 51, -62)
+rest = Transform2D(0.814005, -0.580859, 0.580859, 0.814005, 51, -62)
 auto_calculate_length_and_angle = false
 length = 107.0
 bone_angle = -58.368
@@ -264,7 +264,7 @@ texture = ExtResource("4_m71xw")
 [node name="FrontLeftLeg" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(-30, -54)
 rotation = -0.584646
-rest = Transform2D(0.833907, -0.551904, 0.551904, 0.833907, -30, -54)
+rest = Transform2D(0.833908, -0.551904, 0.551904, 0.833908, -30, -54)
 
 [node name="Sprite2D" type="Sprite2D" parent="Skeleton2D/Torso/FrontLeftLeg"]
 position = Vector2(-25, -34)
@@ -293,7 +293,7 @@ length = 128.0
 bone_angle = -90.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Skeleton2D/Torso/Head"]
-position = Vector2(0, -56)
+position = Vector2(0, -54)
 texture = ExtResource("5_pa2ck")
 
 [node name="RightClaw" type="Node2D" parent="Skeleton2D/Torso/Head/Sprite2D"]
@@ -314,7 +314,7 @@ texture = ExtResource("6_dwaal")
 [node name="BackRightLeg" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(31, -9)
 rotation = -0.659505
-rest = Transform2D(0.790295, -0.612726, 0.612726, 0.790295, 31, -9)
+rest = Transform2D(0.790296, -0.612726, 0.612726, 0.790296, 31, -9)
 
 [node name="Sprite2D" type="Sprite2D" parent="Skeleton2D/Torso/BackRightLeg"]
 position = Vector2(17.8602, 33.0765)
@@ -336,7 +336,7 @@ texture = ExtResource("7_t8bv6")
 [node name="BackLeftLeg" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(-30, -7)
 rotation = -2.50133
-rest = Transform2D(-0.80194, -0.597404, 0.597404, -0.80194, -30, -7)
+rest = Transform2D(-0.801939, -0.597406, 0.597406, -0.801939, -30, -7)
 
 [node name="Sprite2D" type="Sprite2D" parent="Skeleton2D/Torso/BackLeftLeg"]
 position = Vector2(19, -32)

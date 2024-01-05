@@ -41,8 +41,9 @@ func hit():
 		health -= 10
 		$DroneImage.material.set_shader_parameter("progress", 0.9)
 		vulnerable = false
-		$HitTimer.start()
-		$Sounds/HitSound.play()
+		if explosion_active == false:
+			$HitTimer.start()
+			$Sounds/HitSound.play()
 	if health <= 0:
 		explosion_active = true
 		$CollisionShape2D.disabled = true

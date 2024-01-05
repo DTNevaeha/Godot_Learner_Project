@@ -167,7 +167,6 @@ libraries = {
 stream = ExtResource("5_lcl0p")
 
 [node name="ExplosionSound" type="AudioStreamPlayer2D" parent="Sounds"]
-volume_db = 20.0
 
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="timeout" from="HitTimer" to="." method="_on_hit_timer_timeout"]
