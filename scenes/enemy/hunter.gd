@@ -42,11 +42,13 @@ func _on_navigation_timer_timeout():
 func _on_attack_area_body_entered(_body: Node2D):
 	player_nearby = true
 	$AnimationPlayer.play("attack")
+	speed = 0
 
 
 func _on_attack_area_body_exited(_body: Node2D):
 	player_nearby = false
 	$AnimationPlayer.play("walk")
+	speed = 200
 
 
 func attack():
