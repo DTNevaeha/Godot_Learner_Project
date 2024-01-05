@@ -45,6 +45,7 @@ func hit():
 		$Sounds/HitSound.play()
 	if health <= 0:
 		explosion_active = true
+		$CollisionShape2D.disabled = true
 		$AnimationPlayer.play("explosion")
 
 

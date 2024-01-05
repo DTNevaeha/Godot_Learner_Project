@@ -1,9 +1,9 @@
-[gd_scene load_steps=34 format=3 uid="uid://dwyhrh71p7yyt"]
+[gd_scene load_steps=33 format=3 uid="uid://dwyhrh71p7yyt"]
 
 [ext_resource type="PackedScene" uid="uid://qwa64m2p60pk" path="res://scenes/levels/level.tscn" id="1_bru11"]
 [ext_resource type="Script" path="res://scenes/levels/outside.gd" id="2_ho6ch"]
 [ext_resource type="Texture2D" uid="uid://q40v2sv2b73a" path="res://graphics/ground/stones.png" id="2_lm0b0"]
-[ext_resource type="PackedScene" uid="uid://d0t68b1cbrub1" path="res://scenes/Objects/gate.tscn" id="2_tik81"]
+[ext_resource type="PackedScene" path="res://scenes/Objects/gate.tscn" id="2_tik81"]
 [ext_resource type="Texture2D" uid="uid://bih7vdj1sk271" path="res://graphics/decals/dirt_patch.png" id="3_kvxwj"]
 [ext_resource type="Texture2D" uid="uid://dmtyi8u00xoje" path="res://graphics/decals/moss/moss_3.png" id="4_trojr"]
 [ext_resource type="Texture2D" uid="uid://dssbko7kr3yqc" path="res://graphics/decals/moss/moss_5.png" id="5_aruvc"]
@@ -16,14 +16,13 @@
 [ext_resource type="PackedScene" uid="uid://dy0gaphjld57b" path="res://scenes/container/crate.tscn" id="11_3m5n7"]
 [ext_resource type="Texture2D" uid="uid://bveedfq72a57m" path="res://graphics/objects/infestation/medium.png" id="11_rp70o"]
 [ext_resource type="Texture2D" uid="uid://cx7wmv4whqjeh" path="res://graphics/objects/infestation/spikes.png" id="12_awcah"]
-[ext_resource type="PackedScene" uid="uid://cn7ahxxb8m21h" path="res://scenes/Objects/steam_vent.tscn" id="12_ny0ew"]
+[ext_resource type="PackedScene" path="res://scenes/Objects/steam_vent.tscn" id="12_ny0ew"]
 [ext_resource type="Texture2D" uid="uid://dpyifa7y063a1" path="res://graphics/objects/infestation/small_4.png" id="13_iqgiv"]
-[ext_resource type="PackedScene" uid="uid://dlequi7dq2ahn" path="res://scenes/Objects/light_fan_animation.tscn" id="13_m2qv8"]
+[ext_resource type="PackedScene" path="res://scenes/Objects/light_fan_animation.tscn" id="13_m2qv8"]
 [ext_resource type="Texture2D" uid="uid://dcbcj0hblqng5" path="res://graphics/objects/infestation/line.png" id="14_jwsq6"]
 [ext_resource type="Texture2D" uid="uid://bir63gsh26m62" path="res://graphics/objects/infestation/small.png" id="15_ngn16"]
 [ext_resource type="PackedScene" uid="uid://cvddackbgrubu" path="res://scenes/enemy/car.tscn" id="16_cy7f4"]
-[ext_resource type="PackedScene" uid="uid://b0yu3pfi5gt32" path="res://scenes/enemy/scout.tscn" id="23_sgoc5"]
-[ext_resource type="PackedScene" uid="uid://ct0e735q3q6ut" path="res://scenes/enemy/bug.tscn" id="24_gqg0w"]
+[ext_resource type="PackedScene" uid="uid://cqtsafcakt3gm" path="res://scenes/enemy/drone.tscn" id="23_de3tx"]
 [ext_resource type="PackedScene" uid="uid://dcw6ffle5y3vk" path="res://scenes/enemy/hunter.tscn" id="24_h0x6q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fqi58"]
@@ -452,26 +451,8 @@ metadata/_edit_lock_ = true
 [node name="Hunter" parent="Enemies" index="0" instance=ExtResource("24_h0x6q")]
 position = Vector2(3851.08, 2932.89)
 
-[node name="Scout" parent="Enemies" index="1" instance=ExtResource("23_sgoc5")]
-position = Vector2(-3478.68, 3334.96)
-
-[node name="Scout2" parent="Enemies" index="2" instance=ExtResource("23_sgoc5")]
-position = Vector2(1848.08, 674.754)
-
-[node name="Scout3" parent="Enemies" index="3" instance=ExtResource("23_sgoc5")]
-position = Vector2(1864.96, 507.559)
-
-[node name="Bug" parent="Enemies" index="4" instance=ExtResource("24_gqg0w")]
-position = Vector2(-296.924, 1151.46)
-
-[node name="Bug2" parent="Enemies" index="5" instance=ExtResource("24_gqg0w")]
-position = Vector2(-143, 1271.88)
-
-[node name="Bug3" parent="Enemies" index="6" instance=ExtResource("24_gqg0w")]
-position = Vector2(-370.411, 1358.47)
-
-[node name="Bug4" parent="Enemies" index="7" instance=ExtResource("24_gqg0w")]
-position = Vector2(-517.384, 1177.34)
+[node name="Drone" parent="Enemies" index="1" instance=ExtResource("23_de3tx")]
+position = Vector2(-490.571, 932.515)
 
 [node name="Player" parent="." index="7"]
 z_index = 2
