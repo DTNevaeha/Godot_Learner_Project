@@ -26,8 +26,7 @@ func _process(delta):
 		velocity = direction * speed * speed_multiplier
 		var collision = move_and_collide(velocity * delta)
 		if collision:
-			$AnimationPlayer.play("explosion")
-			explosion_active = true
+			exploding()
 	if explosion_active:
 		var targets = get_tree().get_nodes_in_group("Container") + get_tree().get_nodes_in_group("Entity")
 		for target in targets:
@@ -45,9 +44,15 @@ func hit():
 			$HitTimer.start()
 			$Sounds/HitSound.play()
 	if health <= 0:
-		explosion_active = true
-		$CollisionShape2D.disabled = true
-		$AnimationPlayer.play("explosion")
+		exploding()
+
+
+func exploding():
+	explosion_active = true
+	$CollisionShape2D.disabled = true
+	$AnimationPlayer.play("explosion")
+	await get_tree().create_timer(0.5).timeout
+	SoundManager.explosion_sound(global_position)
 
 
 func stop_movement():
