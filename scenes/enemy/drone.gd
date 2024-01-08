@@ -65,7 +65,9 @@ func _on_hit_timer_timeout():
 	$DroneImage.material.set_shader_parameter("progress", 0)
 
 
-func _on_notice_area_body_entered(_body: Node2D):
-	active = true
-	var tween = create_tween()
-	tween.tween_property(self, "speed", max_speed, 6)
+func _on_notice_area_body_entered(body: Node2D):
+	# When the player enters the notice area, the drone will start moving towards the player
+	if body.name == "Player":
+		active = true
+		var tween = create_tween()
+		tween.tween_property(self, "speed", max_speed, 6)
