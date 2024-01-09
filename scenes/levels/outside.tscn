@@ -22,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://dcbcj0hblqng5" path="res://graphics/objects/infestation/line.png" id="14_jwsq6"]
 [ext_resource type="Texture2D" uid="uid://bir63gsh26m62" path="res://graphics/objects/infestation/small.png" id="15_ngn16"]
 [ext_resource type="PackedScene" uid="uid://cvddackbgrubu" path="res://scenes/enemy/car.tscn" id="16_cy7f4"]
-[ext_resource type="PackedScene" uid="uid://cqtsafcakt3gm" path="res://scenes/enemy/drone.tscn" id="23_de3tx"]
+[ext_resource type="PackedScene" uid="uid://ct0e735q3q6ut" path="res://scenes/enemy/bug.tscn" id="23_wa8bt"]
 [ext_resource type="PackedScene" uid="uid://dcw6ffle5y3vk" path="res://scenes/enemy/hunter.tscn" id="24_h0x6q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fqi58"]
@@ -451,11 +451,17 @@ metadata/_edit_lock_ = true
 [node name="Hunter" parent="Enemies" index="0" instance=ExtResource("24_h0x6q")]
 position = Vector2(3851.08, 2932.89)
 
-[node name="Drone" parent="Enemies" index="1" instance=ExtResource("23_de3tx")]
-position = Vector2(1.98612, 668.783)
+[node name="Bug" parent="Enemies" index="1" instance=ExtResource("23_wa8bt")]
+position = Vector2(-220.459, 1101.7)
 
-[node name="Drone2" parent="Enemies" index="2" instance=ExtResource("23_de3tx")]
-position = Vector2(1061.58, 1268.9)
+[node name="Bug2" parent="Enemies" index="2" instance=ExtResource("23_wa8bt")]
+position = Vector2(6.95142, 1094.73)
+
+[node name="Bug3" parent="Enemies" index="3" instance=ExtResource("23_wa8bt")]
+position = Vector2(247.272, 1087.77)
+
+[node name="Bug4" parent="Enemies" index="4" instance=ExtResource("23_wa8bt")]
+position = Vector2(464.751, 1087.77)
 
 [node name="Player" parent="." index="7"]
 z_index = 2
