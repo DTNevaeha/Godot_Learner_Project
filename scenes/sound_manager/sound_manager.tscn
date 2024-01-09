@@ -1,14 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbleajigmxeof"]
+[gd_scene load_steps=3 format=3 uid="uid://cbleajigmxeof"]
 
 [ext_resource type="AudioStream" uid="uid://bnljagligl0wd" path="res://audio/laser.wav" id="1_bwyc3"]
 [ext_resource type="Script" path="res://scenes/sound_manager/sound_manager.gd" id="1_lxr6m"]
-[ext_resource type="AudioStream" uid="uid://dchymo8343dgr" path="res://audio/explosion.wav" id="3_a81iq"]
 
 [node name="SoundManager" type="Node2D"]
 script = ExtResource("1_lxr6m")
 
 [node name="LaserSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1_bwyc3")
-
-[node name="ExplosionSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_a81iq")

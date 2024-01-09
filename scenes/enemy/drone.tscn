@@ -103,7 +103,7 @@ tracks/4/keys = {
 }
 tracks/5/type = "audio"
 tracks/5/imported = false
-tracks/5/enabled = false
+tracks/5/enabled = true
 tracks/5/path = NodePath("Sounds/ExplosionSound")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
@@ -161,7 +161,7 @@ libraries = {
 "": SubResource("AnimationLibrary_e7bce")
 }
 
-[node name="Sounds" type="Node" parent="."]
+[node name="Sounds" type="Node2D" parent="."]
 
 [node name="HitSound" type="AudioStreamPlayer2D" parent="Sounds"]
 stream = ExtResource("5_lcl0p")

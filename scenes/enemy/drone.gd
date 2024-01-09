@@ -26,9 +26,12 @@ func _process(delta):
 		velocity = direction * speed * speed_multiplier
 		var collision = move_and_collide(velocity * delta)
 		if collision:
+			$Sounds/HitSound.play()
 			exploding()
 	if explosion_active:
-		var targets = get_tree().get_nodes_in_group("Container") + get_tree().get_nodes_in_group("Entity")
+		var targets = (
+			get_tree().get_nodes_in_group("Container") + get_tree().get_nodes_in_group("Entity")
+		)
 		for target in targets:
 			var in_range = target.global_position.distance_to(global_position) < explosion_radius
 			if "hit" in target and in_range:
@@ -52,7 +55,6 @@ func exploding():
 	$CollisionShape2D.disabled = true
 	$AnimationPlayer.play("explosion")
 	await get_tree().create_timer(0.5).timeout
-	SoundManager.explosion_sound(global_position)
 
 
 func stop_movement():
