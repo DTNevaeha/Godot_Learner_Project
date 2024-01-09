@@ -47,9 +47,10 @@ func _on_notice_area_body_exited(_body: Node2D):
 	$AnimatedSprite2D.stop()
 
 
-func _on_notice_area_body_entered(_body: Node2D):
-	active = true
-	$AnimatedSprite2D.play("walk")
+func _on_notice_area_body_entered(body: Node2D):
+	if body.name == "Player":
+		active = true
+		$AnimatedSprite2D.play("walk")
 
 
 func _on_animated_sprite_2d_animation_finished():
