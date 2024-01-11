@@ -29,6 +29,7 @@ func _process(delta):
 			$Sounds/HitSound.play()
 			exploding()
 	if explosion_active:
+		active = false
 		var targets = (
 			get_tree().get_nodes_in_group("Container") + get_tree().get_nodes_in_group("Entity")
 		)
