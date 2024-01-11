@@ -452,16 +452,10 @@ metadata/_edit_lock_ = true
 position = Vector2(3851.08, 2932.89)
 
 [node name="Bug" parent="Enemies" index="1" instance=ExtResource("23_wa8bt")]
-position = Vector2(-220.459, 1101.7)
+position = Vector2(375.376, 1018.1)
 
 [node name="Bug2" parent="Enemies" index="2" instance=ExtResource("23_wa8bt")]
-position = Vector2(6.95142, 1094.73)
-
-[node name="Bug3" parent="Enemies" index="3" instance=ExtResource("23_wa8bt")]
-position = Vector2(247.272, 1087.77)
-
-[node name="Bug4" parent="Enemies" index="4" instance=ExtResource("23_wa8bt")]
-position = Vector2(464.751, 1087.77)
+position = Vector2(17.8751, 1173.36)
 
 [node name="Player" parent="." index="7"]
 z_index = 2

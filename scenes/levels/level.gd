@@ -16,7 +16,7 @@ func _ready():
 
 func _on_container_opened(pos, direction):
 	var item = item_scene.instantiate()
-	item.position = pos
+	item.global_position = pos
 	item.direction = direction
 	$Items.call_deferred("add_child", item)
 
@@ -31,15 +31,15 @@ func _on_scout_laser(pos, direction):
 
 func create_laser(pos, direction):
 	var laser = laser_scene.instantiate() as Area2D
-	laser.position = pos
+	$Projectiles.add_child(laser)
+	laser.global_position = pos
 	laser.rotation_degrees = rad_to_deg(direction.angle()) + 90
 	laser.direction = direction
-	$Projectiles.add_child(laser)
 	SoundManager.laser_sound(pos)
 
 
 func _on_player_grenade(pos, direction):
 	var grenade = grenade_scene.instantiate() as RigidBody2D
-	grenade.position = pos
+	grenade.global_position = pos
 	grenade.linear_velocity = direction * grenade.speed
 	$Projectiles.add_child(grenade)

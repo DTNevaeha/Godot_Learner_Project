@@ -6,7 +6,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pie6w"]
 radius = 5.0
-height = 100.0
+height = 64.0
 
 [node name="Laser" type="Area2D"]
 collision_layer = 8
@@ -15,7 +15,7 @@ script = ExtResource("1_d88ou")
 speed = 2000
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1, 31)
+position = Vector2(0, 45)
 texture = ExtResource("1_8ep7l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -27,6 +27,7 @@ one_shot = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_jjpvp")
+metadata/_edit_lock_ = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="SelfDestructTimer" to="." method="_on_self_destruct_timer_timeout"]
