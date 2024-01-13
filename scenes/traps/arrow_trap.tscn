@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://brt5j1xlvl5d6"]
+
+[ext_resource type="Script" path="res://scenes/traps/arrow_trap.gd" id="1_h8iow"]
+[ext_resource type="TileSet" uid="uid://fl6flj8sb7lq" path="res://scenes/tile_maps/outside_walls.tres" id="1_kyf7b"]
+
+[node name="ArrowTrap" type="Node2D" groups=["Traps"]]
+script = ExtResource("1_h8iow")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_kyf7b")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 65536, 0, 2, 65536, 0, 131072, 65536, 0, 131074, 65536, 0, 1, 65536, 0, 131073, 65536, 0)
+
+[node name="TopWall" type="Node2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="TopWall"]
+position = Vector2(0, 290)
+
+[node name="Marker2D2" type="Marker2D" parent="TopWall"]
+position = Vector2(390, 289)
+
+[node name="Marker2D3" type="Marker2D" parent="TopWall"]
+position = Vector2(780, 289)
+
+[node name="Marker2D4" type="Marker2D" parent="TopWall"]
+position = Vector2(1170, 289)
+
+[node name="BottomWall" type="Node2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="BottomWall"]
+position = Vector2(195, 880)
+
+[node name="Marker2D2" type="Marker2D" parent="BottomWall"]
+position = Vector2(583, 880)
+
+[node name="Marker2D3" type="Marker2D" parent="BottomWall"]
+position = Vector2(975, 880)
+
+[node name="Timers" type="Node" parent="."]
+
+[node name="TopTimer" type="Timer" parent="Timers"]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timers/TopTimer" to="." method="_on_top_timer_timeout"]

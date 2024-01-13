@@ -864,9 +864,6 @@ collision_mask = 11
 position = Vector2(2.97778, -2.48804)
 shape = SubResource("RectangleShape2D_4opec")
 
-[node name="Items" parent="." index="3"]
-metadata/_edit_lock_ = true
-
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="." index="4"]
 visible = false
 color = Color(0.588235, 0.764706, 0.8, 1)
@@ -880,6 +877,9 @@ metadata/_edit_lock_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitGateArea" index="0"]
 position = Vector2(-153.924, 42.0359)
 shape = SubResource("RectangleShape2D_obhje")
+
+[node name="Items" parent="." index="6"]
+metadata/_edit_lock_ = true
 
 [node name="Drone" parent="Enemies" index="0" instance=ExtResource("23_10pra")]
 position = Vector2(1471.71, 2335.77)
@@ -956,7 +956,7 @@ position = Vector2(-568.029, 1075.83)
 [node name="Drone2" parent="Enemies" index="24" instance=ExtResource("23_10pra")]
 position = Vector2(5492.61, -1386.33)
 
-[node name="Player" parent="." index="8"]
+[node name="Player" parent="." index="9"]
 position = Vector2(7985.18, -1398.27)
 metadata/_edit_group_ = true
 
@@ -965,7 +965,7 @@ position = Vector2(0.000765562, -0.00147438)
 texture = ExtResource("6_bash1")
 texture_scale = 3.0
 
-[node name="Lights" parent="." index="9"]
+[node name="Lights" parent="." index="10"]
 metadata/_edit_lock_ = true
 metadata/_edit_group_ = true
 

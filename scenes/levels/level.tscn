@@ -16,6 +16,8 @@ script = ExtResource("1_nv3lm")
 
 [node name="Ground" type="Node2D" parent="."]
 
+[node name="Traps" type="Node2D" parent="."]
+
 [node name="Infestation" type="Node2D" parent="."]
 
 [node name="Items" type="Node2D" parent="."]

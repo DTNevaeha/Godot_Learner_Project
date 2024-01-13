@@ -35,9 +35,9 @@ func _process(_delta):
 			$Timers/LaserTimer.start()
 
 
-func _on_attack_area_body_entered(_body: Node2D):
+func _on_attack_area_body_entered(body: Node2D):
 	# check to see if the player entered the body area
-	if _body.name == "Player":
+	if body.name == "Player":
 		player_nearby = true
 
 

@@ -13,6 +13,9 @@ func _ready():
 	for scout in get_tree().get_nodes_in_group("Scouts"):
 		scout.connect("laser", _on_scout_laser)
 
+	for trap in get_tree().get_nodes_in_group("Traps"):
+		trap.connect("trap_shoot", _on_trap_shoot)
+
 
 func _on_container_opened(pos, direction):
 	var item = item_scene.instantiate()
@@ -26,6 +29,10 @@ func _on_player_laser(pos, direction):
 
 
 func _on_scout_laser(pos, direction):
+	create_laser(pos, direction)
+
+
+func _on_trap_shoot(pos, direction):
 	create_laser(pos, direction)
 
 
