@@ -3,14 +3,15 @@ extends Node2D
 @onready var top_direction: Vector2 = Vector2.DOWN.rotated(rotation)
 @onready var bottom_direction: Vector2 = Vector2.UP.rotated(rotation)
 
-var top_wall = true
-var bottom_wall = true
+var top_wall: bool = false
+var bottom_wall: bool = false
+var player_nearby: bool = false
 
 signal trap_shoot(pos, direction)
 
 
 func _process(_delta):
-	if top_wall:
+	if top_wall and player_nearby:
 		var top_markers = $TopWall.get_children()
 		for tmarker in top_markers:
 			var pos: Vector2 = tmarker.global_position
@@ -29,3 +30,16 @@ func _process(_delta):
 
 func _on_top_timer_timeout():
 	top_wall = true
+
+
+func _on_area_2d_body_entered(body:Node2D):
+	if body.name == "Player":
+		player_nearby = true
+		$Timers/TopTimer.start()
+
+
+func _on_area_2d_body_exited(_body:Node2D):
+	player_nearby = false
+
+
+

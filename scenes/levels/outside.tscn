@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dwyhrh71p7yyt"]
+[gd_scene load_steps=29 format=3 uid="uid://dwyhrh71p7yyt"]
 
 [ext_resource type="PackedScene" uid="uid://qwa64m2p60pk" path="res://scenes/levels/level.tscn" id="1_bru11"]
 [ext_resource type="Script" path="res://scenes/levels/outside.gd" id="2_ho6ch"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://dlequi7dq2ahn" path="res://scenes/objects/light_fan_animation.tscn" id="13_m2qv8"]
 [ext_resource type="Texture2D" uid="uid://dcbcj0hblqng5" path="res://graphics/objects/infestation/line.png" id="14_jwsq6"]
 [ext_resource type="Texture2D" uid="uid://bir63gsh26m62" path="res://graphics/objects/infestation/small.png" id="15_ngn16"]
+[ext_resource type="PackedScene" uid="uid://brt5j1xlvl5d6" path="res://scenes/traps/arrow_trap.tscn" id="16_2dsh7"]
 [ext_resource type="PackedScene" uid="uid://cvddackbgrubu" path="res://scenes/enemy/car.tscn" id="16_cy7f4"]
 [ext_resource type="PackedScene" uid="uid://dcw6ffle5y3vk" path="res://scenes/enemy/hunter.tscn" id="24_h0x6q"]
 
@@ -278,6 +279,9 @@ position = Vector2(2338.65, 2135.73)
 
 [node name="LightFanAnimation" parent="Ground" index="49" instance=ExtResource("13_m2qv8")]
 position = Vector2(-2381.35, 2094.92)
+
+[node name="ArrowTrap" parent="Traps" index="0" instance=ExtResource("16_2dsh7")]
+position = Vector2(-1288.99, 791.194)
 
 [node name="Medium" type="Sprite2D" parent="Infestation" index="0"]
 position = Vector2(5140.07, 1874.98)
