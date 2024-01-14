@@ -894,7 +894,7 @@ position = Vector2(2367.45, -2030.23)
 position = Vector2(-2232.4, 2818.44)
 
 [node name="Bug3" parent="Enemies" index="4" instance=ExtResource("24_wlhvc")]
-position = Vector2(-2462.79, 1170.37)
+position = Vector2(-2464.77, 1208.19)
 
 [node name="Bug4" parent="Enemies" index="5" instance=ExtResource("24_wlhvc")]
 position = Vector2(1994.06, -286.621)
@@ -906,7 +906,7 @@ position = Vector2(-921.558, -1417.18)
 position = Vector2(-2486.62, -2476.09)
 
 [node name="Bug9" parent="Enemies" index="8" instance=ExtResource("24_wlhvc")]
-position = Vector2(-3217.51, 1417.18)
+position = Vector2(-3217.51, 1466.94)
 
 [node name="Bug10" parent="Enemies" index="9" instance=ExtResource("24_wlhvc")]
 position = Vector2(-4154.96, 1090.75)
@@ -936,7 +936,7 @@ position = Vector2(905.669, 4784.98)
 position = Vector2(-4496.57, 2101.89)
 
 [node name="Bug6" parent="Enemies" index="18" instance=ExtResource("24_wlhvc")]
-position = Vector2(-4496.57, 2101.89)
+position = Vector2(-3924.57, 1912.8)
 
 [node name="Scout" parent="Enemies" index="19" instance=ExtResource("25_mntr7")]
 position = Vector2(683.224, -1337.57)
@@ -957,7 +957,7 @@ position = Vector2(-568.029, 1075.83)
 position = Vector2(5492.61, -1386.33)
 
 [node name="Player" parent="." index="9"]
-position = Vector2(7985.18, -1398.27)
+position = Vector2(-3159.91, -677.74)
 metadata/_edit_group_ = true
 
 [node name="PointLight2D" type="PointLight2D" parent="Player" index="8"]
