@@ -385,7 +385,7 @@ rotation = -1.5708
 position = Vector2(8010.01, -2731.86)
 
 [node name="Toilet2" parent="Ground" index="44" instance=ExtResource("9_x5teq")]
-position = Vector2(8204.65, -590.161)
+position = Vector2(8207.63, -442.87)
 rotation = 1.5708
 
 [node name="Toilet8" parent="Ground" index="45" instance=ExtResource("9_x5teq")]
@@ -957,7 +957,7 @@ position = Vector2(-568.029, 1075.83)
 position = Vector2(5492.61, -1386.33)
 
 [node name="Player" parent="." index="9"]
-position = Vector2(-3159.91, -677.74)
+position = Vector2(7990.15, -1572.44)
 metadata/_edit_group_ = true
 
 [node name="PointLight2D" type="PointLight2D" parent="Player" index="8"]

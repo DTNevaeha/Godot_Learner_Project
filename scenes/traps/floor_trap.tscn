@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://l32l8qtbefpn"]
+
+[ext_resource type="Script" path="res://scenes/traps/floor_trap.gd" id="1_3jgxk"]
+[ext_resource type="TileSet" uid="uid://e2c3m5av64kw" path="res://scenes/levels/house.tres" id="1_bakhn"]
+[ext_resource type="Texture2D" uid="uid://q40v2sv2b73a" path="res://graphics/ground/stones.png" id="3_lahuw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_33nao"]
+size = Vector2(390, 390)
+
+[node name="FloorTrap" type="Node2D"]
+script = ExtResource("1_3jgxk")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_bakhn")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 65536, 1, 1, 65536, 1, 65536, 65536, 1, 65537, 65536, 1)
+
+[node name="FloorTiles" type="Node2D" parent="."]
+
+[node name="TopLeft" type="Area2D" parent="FloorTiles"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FloorTiles/TopLeft"]
+position = Vector2(195, 195)
+shape = SubResource("RectangleShape2D_33nao")
+
+[node name="Sprite2D" type="Sprite2D" parent="FloorTiles/TopLeft"]
+position = Vector2(195, 195)
+scale = Vector2(0.203125, 0.304688)
+texture = ExtResource("3_lahuw")
+
+[node name="TopRight" type="Area2D" parent="FloorTiles"]
+position = Vector2(390, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FloorTiles/TopRight"]
+position = Vector2(195, 195)
+shape = SubResource("RectangleShape2D_33nao")
+
+[node name="Sprite2D" type="Sprite2D" parent="FloorTiles/TopRight"]
+position = Vector2(195, 195)
+scale = Vector2(0.203125, 0.304688)
+texture = ExtResource("3_lahuw")
+
+[node name="BottomLeft" type="Area2D" parent="FloorTiles"]
+position = Vector2(0, 390)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FloorTiles/BottomLeft"]
+position = Vector2(195, 195)
+shape = SubResource("RectangleShape2D_33nao")
+
+[node name="Sprite2D" type="Sprite2D" parent="FloorTiles/BottomLeft"]
+position = Vector2(195, 195)
+scale = Vector2(0.203125, 0.304688)
+texture = ExtResource("3_lahuw")
+
+[node name="BottomRight" type="Area2D" parent="FloorTiles"]
+position = Vector2(390, 390)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FloorTiles/BottomRight"]
+position = Vector2(195, 195)
+shape = SubResource("RectangleShape2D_33nao")
+
+[node name="Sprite2D" type="Sprite2D" parent="FloorTiles/BottomRight"]
+position = Vector2(195, 195)
+scale = Vector2(0.203125, 0.304688)
+texture = ExtResource("3_lahuw")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="body_entered" from="FloorTiles/TopLeft" to="." method="_on_top_left_body_entered"]
+[connection signal="body_exited" from="FloorTiles/TopLeft" to="." method="_on_top_left_body_exited"]
+[connection signal="body_entered" from="FloorTiles/TopRight" to="." method="_on_top_right_body_entered"]
+[connection signal="body_exited" from="FloorTiles/TopRight" to="." method="_on_top_right_body_exited"]
+[connection signal="body_entered" from="FloorTiles/BottomLeft" to="." method="_on_bottom_left_body_entered"]
+[connection signal="body_exited" from="FloorTiles/BottomLeft" to="." method="_on_bottom_left_body_exited"]
+[connection signal="body_entered" from="FloorTiles/BottomRight" to="." method="_on_bottom_right_body_entered"]
+[connection signal="body_exited" from="FloorTiles/BottomRight" to="." method="_on_bottom_right_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
