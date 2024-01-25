@@ -957,7 +957,7 @@ position = Vector2(-568.029, 1075.83)
 position = Vector2(5492.61, -1386.33)
 
 [node name="Player" parent="." index="9"]
-position = Vector2(7990.15, -1572.44)
+position = Vector2(8030.86, -1592.34)
 metadata/_edit_group_ = true
 
 [node name="PointLight2D" type="PointLight2D" parent="Player" index="8"]
