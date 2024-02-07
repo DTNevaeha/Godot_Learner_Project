@@ -11,6 +11,7 @@ var moved_distance: float = 0.0
 var player_onboard: bool = false
 var entered_bodies: Array = []
 
+
 ######
 # The following code is for moving the platform based on a timer
 ######
@@ -32,6 +33,7 @@ func _on_timer_timeout():
 	$Timer.stop()
 	await get_tree().create_timer(2.0).timeout
 	$Timer.start()
+
 
 ######
 # The following code is for moving the platform based on a specific distance
@@ -62,6 +64,7 @@ func _on_timer_timeout():
 
 func _on_body_entered(body: Node2D):
 	entered_bodies.append(body)
+
 
 func _on_body_exited(body: Node2D):
 	entered_bodies.erase(body)
