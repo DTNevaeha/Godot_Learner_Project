@@ -49,6 +49,11 @@ func _process(_delta):
 		$GrenadeTimer.start()
 		var pos = $LaserStartPositions.get_children()[0].global_position
 		grenade.emit(pos, player_direction)
+	
+	# Player death
+	if Globals.health <= 0:
+		get_tree().reload_current_scene()
+		Globals.health = 100
 
 
 func _on_laser_timer_timeout():
