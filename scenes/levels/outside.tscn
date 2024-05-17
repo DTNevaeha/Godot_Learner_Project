@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://dwyhrh71p7yyt"]
+[gd_scene load_steps=34 format=3 uid="uid://dwyhrh71p7yyt"]
 
 [ext_resource type="PackedScene" uid="uid://qwa64m2p60pk" path="res://scenes/levels/level.tscn" id="1_bru11"]
 [ext_resource type="Script" path="res://scenes/levels/outside.gd" id="2_ho6ch"]
@@ -22,8 +22,12 @@
 [ext_resource type="Texture2D" uid="uid://bir63gsh26m62" path="res://graphics/objects/infestation/small.png" id="15_ngn16"]
 [ext_resource type="PackedScene" uid="uid://cvddackbgrubu" path="res://scenes/enemy/car.tscn" id="16_cy7f4"]
 [ext_resource type="PackedScene" uid="uid://csdoawg010skk" path="res://scenes/traps/moving_platform.tscn" id="16_te8v4"]
-[ext_resource type="PackedScene" uid="uid://ct0e735q3q6ut" path="res://scenes/enemy/bug.tscn" id="23_bl66x"]
+[ext_resource type="PackedScene" uid="uid://brt5j1xlvl5d6" path="res://scenes/traps/arrow_trap.tscn" id="17_2kyjs"]
+[ext_resource type="PackedScene" uid="uid://l32l8qtbefpn" path="res://scenes/traps/floor_trap.tscn" id="18_kw8ry"]
 [ext_resource type="PackedScene" uid="uid://dcw6ffle5y3vk" path="res://scenes/enemy/hunter.tscn" id="24_h0x6q"]
+[ext_resource type="PackedScene" uid="uid://cqtsafcakt3gm" path="res://scenes/enemy/drone.tscn" id="25_ayfvy"]
+[ext_resource type="PackedScene" uid="uid://ct0e735q3q6ut" path="res://scenes/enemy/bug.tscn" id="26_m5dhq"]
+[ext_resource type="PackedScene" uid="uid://b0yu3pfi5gt32" path="res://scenes/enemy/scout.tscn" id="27_s5aa4"]
 
 [sub_resource type="Curve2D" id="Curve2D_fu2jh"]
 _data = {
@@ -282,7 +286,13 @@ position = Vector2(2338.65, 2135.73)
 position = Vector2(-2381.35, 2094.92)
 
 [node name="MovingPlatform" parent="Traps" index="0" instance=ExtResource("16_te8v4")]
-position = Vector2(-95.3336, 752.381)
+position = Vector2(-92.3545, 731.482)
+
+[node name="ArrowTrap" parent="Traps" index="1" instance=ExtResource("17_2kyjs")]
+position = Vector2(-1680.26, 745.415)
+
+[node name="FloorTrap" parent="Traps" index="2" instance=ExtResource("18_kw8ry")]
+position = Vector2(624.634, 1216.15)
 
 [node name="Medium" type="Sprite2D" parent="Infestation" index="0"]
 position = Vector2(5140.07, 1874.98)
@@ -370,8 +380,23 @@ metadata/_edit_lock_ = true
 [node name="Hunter" parent="Enemies" index="0" instance=ExtResource("24_h0x6q")]
 position = Vector2(3851.08, 2932.89)
 
-[node name="Bug" parent="Enemies" index="1" instance=ExtResource("23_bl66x")]
-position = Vector2(-124.132, 347.329)
+[node name="Drone" parent="Enemies" index="1" instance=ExtResource("25_ayfvy")]
+position = Vector2(-4133.11, 3420.55)
+
+[node name="Bug" parent="Enemies" index="2" instance=ExtResource("26_m5dhq")]
+position = Vector2(-2133.09, 3176.72)
+
+[node name="Bug2" parent="Enemies" index="3" instance=ExtResource("26_m5dhq")]
+position = Vector2(-405.168, 4359.03)
+
+[node name="Bug3" parent="Enemies" index="4" instance=ExtResource("26_m5dhq")]
+position = Vector2(-1918.59, 4773.04)
+
+[node name="Bug4" parent="Enemies" index="5" instance=ExtResource("26_m5dhq")]
+position = Vector2(1938.45, 764.324)
+
+[node name="Scout" parent="Enemies" index="6" instance=ExtResource("27_s5aa4")]
+position = Vector2(1001, 2973.7)
 
 [node name="Player" parent="." index="8"]
 z_index = 2

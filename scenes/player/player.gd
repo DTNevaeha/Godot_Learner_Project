@@ -55,6 +55,9 @@ func _process(_delta):
 		get_tree().reload_current_scene()
 		Globals.health = 100
 
+	# play death animation
+
+
 
 func _on_laser_timer_timeout():
 	can_laser = true

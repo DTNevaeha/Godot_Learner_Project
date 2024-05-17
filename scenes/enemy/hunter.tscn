@@ -243,7 +243,6 @@ texture = ExtResource("2_ydgqi")
 [node name="FrontRightLeg" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(31, -52)
 rotation = 0.457305
-scale = Vector2(1, 1)
 rest = Transform2D(0.897246, 0.441532, -0.441532, 0.897246, 31, -52)
 
 [node name="Sprite2D" type="Sprite2D" parent="Skeleton2D/Torso/FrontRightLeg"]
@@ -253,7 +252,6 @@ texture = ExtResource("3_4wiwo")
 [node name="FrontRightClaw" type="Bone2D" parent="Skeleton2D/Torso/FrontRightLeg"]
 position = Vector2(51, -62)
 rotation = -0.619783
-scale = Vector2(1, 1)
 rest = Transform2D(0.814005, -0.580859, 0.580859, 0.814005, 51, -62)
 auto_calculate_length_and_angle = false
 length = 107.0
@@ -266,7 +264,6 @@ texture = ExtResource("4_m71xw")
 [node name="FrontLeftLeg" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(-30, -54)
 rotation = -0.584646
-scale = Vector2(1, 1)
 rest = Transform2D(0.833908, -0.551904, 0.551904, 0.833908, -30, -54)
 
 [node name="Sprite2D" type="Sprite2D" parent="Skeleton2D/Torso/FrontLeftLeg"]
@@ -317,7 +314,6 @@ texture = ExtResource("6_dwaal")
 [node name="BackRightLeg" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(31, -9)
 rotation = -0.659505
-scale = Vector2(1, 1)
 rest = Transform2D(0.790296, -0.612726, 0.612726, 0.790296, 31, -9)
 
 [node name="Sprite2D" type="Sprite2D" parent="Skeleton2D/Torso/BackRightLeg"]
@@ -350,7 +346,6 @@ texture = ExtResource("6_u3v1r")
 [node name="BackLeftClaw" type="Bone2D" parent="Skeleton2D/Torso/BackLeftLeg"]
 position = Vector2(40, -66)
 rotation = -0.732916
-scale = Vector2(1, 1)
 rest = Transform2D(0.743227, -0.66904, 0.66904, 0.743227, 40, -66)
 auto_calculate_length_and_angle = false
 length = 113.428
